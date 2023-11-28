@@ -17,7 +17,7 @@ class UserHome extends React.Component {
 
   componentWillMount(){
     
-    axios.get(`http://localhost:8080/collegeManagementSystem/loadAllCourses`).then((res) => {
+    axios.get(`https://cms-backend-api-361fc037741a.herokuapp.com/collegeManagementSystem/loadAllCourses`).then((res) => {
       this.setState({
         departmentList:res.data.data,
       })

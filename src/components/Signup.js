@@ -5,7 +5,7 @@ import Alert from "@mui/material/Alert";
 import { withRouter } from "react-router";
 import axios from "axios";
 
-const eventBaseUrl = "http://localhost:8080/collegeManagementSystem/userSignup";
+const eventBaseUrl = "https://cms-backend-api-361fc037741a.herokuapp.com/collegeManagementSystem/userSignup";
 
 class Signup extends React.Component {
   constructor(props) {

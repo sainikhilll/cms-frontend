@@ -15,7 +15,7 @@ class ViewCourses extends React.Component {
   }
 
   componentWillMount() {
-    let reqUrl = `http://localhost:8080/collegeManagementSystem/getDataByStudentId/${localStorage.getItem("studentId")}`;
+    let reqUrl = `https://cms-backend-api-361fc037741a.herokuapp.com/collegeManagementSystem/getDataByStudentId/${localStorage.getItem("studentId")}`;
     axios.get(reqUrl).then((res) => {
       this.setState({
         courseList:res.data.data
@@ -24,7 +24,7 @@ class ViewCourses extends React.Component {
   }
 
   refreshData=()=>{
-    let reqUrl = `http://localhost:8080/collegeManagementSystem/getDataByStudentId/${localStorage.getItem("studentId")}`;
+    let reqUrl = `https://cms-backend-api-361fc037741a.herokuapp.com/collegeManagementSystem/getDataByStudentId/${localStorage.getItem("studentId")}`;
     axios.get(reqUrl).then((res) => {
       this.setState({
         courseList:res.data.data

@@ -31,7 +31,7 @@ class CourseAccordian extends React.Component {
   handleUnenrollCourse = () =>{
     const{data}=this.props;
     const userId=localStorage.getItem("studentId")
-    let reqUrl = `http://localhost:8080/collegeManagementSystem/unenrollCourse/${data.courseId}/${userId}`;
+    let reqUrl = `https://cms-backend-api-361fc037741a.herokuapp.com/collegeManagementSystem/unenrollCourse/${data.courseId}/${userId}`;
     axios.delete(reqUrl).then((res) => {
       this.props.refreshData();
       

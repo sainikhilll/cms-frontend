@@ -54,7 +54,7 @@ class CourseBox extends React.Component {
       }
       
         
-      axios.post("http://localhost:8080/collegeManagementSystem/enrollCourse",json).then((res) => {
+      axios.post("https://cms-backend-api-361fc037741a.herokuapp.com/collegeManagementSystem/enrollCourse",json).then((res) => {
         if(res.data.isSuccess===true){
           alert('Enrollment request for this course is submitted successfully');
           push('/userhome');
